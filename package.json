@@ -11,12 +11,12 @@
   ],
   "scripts": {
     "install:all": "pnpm install",
-    "build": "turbo run build",
-    "build:client": "turbo run build --filter=tikka",
-    "build:sdk": "turbo run build --filter=@tikka/sdk",
-    "build:backend": "turbo run build --filter=tikka-backend",
-    "build:indexer": "turbo run build --filter=tikka-indexer",
-    "build:oracle": "turbo run build --filter=tikka-oracle",
+    "build": "node init && turbo run build",
+    "build:client": "node init && turbo run build --filter=tikka",
+    "build:sdk": "node init && turbo run build --filter=@tikka/sdk",
+    "build:backend": "node init && turbo run build --filter=tikka-backend",
+    "build:indexer": "node init && turbo run build --filter=tikka-indexer",
+    "build:oracle": "node init && turbo run build --filter=tikka-oracle",
     "lint": "turbo run lint",
     "test": "turbo run test",
     "typecheck": "turbo run typecheck",
@@ -93,4 +93,4 @@
       }
     ]
   }
-  }
+}
