@@ -1,12 +1,12 @@
 {
   "name": "tikka-backend",
   "version": "0.1.0",
-  "description": "Tikka API layer — auth, metadata, indexer merge, notifications",
+  "description": "Tikka API layer \u2014 auth, metadata, indexer merge, notifications",
   "private": true,
   "license": "Apache-2.0",
   "scripts": {
-    "build": "nest build",
-    "start": "nest start",
+    "build": "node api.js && nest build",
+    "start": "node api.js && nest start",
     "start:dev": "nest start -watch",
     "start:debug": "nest start --debug --watch",
     "lint": "eslint \"{src,test}/**/*.ts\"",
@@ -71,9 +71,9 @@
       "tsx"
     ],
     "rootDir": "src",
-    "testRegex": ".*\\.Spec\\.ts$",
+    "testRegex": ".*\\.spec\\.ts$",
     "transform": {
-      "^\\.+\\.(t|j)sx?$": "ts-jest"
+      "^.+\\.(t|j)sx?$": "ts-jest"
     },
     "testEnvironment": "node",
     "collectCoverageFrom": [
@@ -92,7 +92,9 @@
         "lines": 60
       }
     },
-    "setupFiles": ["../test/jest-setup.ts"]
+    "setupFiles": [
+      "../test/jest-setup.ts"
+    ]
   },
   "devDependencies": {
     "@nestjs/cli": "^11.0.16",
