@@ -1,0 +1,33 @@
+{
+  "default_branch": "master",
+  "branches": [
+    "add-csv-export-history",
+    "docs/sdk-gh-pages-deploy",
+    "feat/add-xbull-connect-adapter-event-listener-cleanup",
+    "feat/contract-lifecycle-validation-929",
+    "feat/env-Add-accessibility-attributes",
+    "master",
+    "origin",
+    "test/client-create-raffle-steps"
+  ],
+  "parent": {
+    "add-csv-export-history": "master",
+    "docs/sdk-gh-pages-deploy": "master",
+    "feat/add-xbull-connect-adapter-event-listener-cleanup": "master",
+    "feat/contract-lifecycle-validation-929": "master",
+    "feat/env-Add-accessibility-attributes": "master",
+    "master": null,
+    "origin": "master",
+    "test/client-create-raffle-steps": "master"
+  },
+  "order": [
+    "master",
+    "add-csv-export-history",
+    "docs/sdk-gh-pages-deploy",
+    "feat/add-xbull-connect-adapter-event-listener-cleanup",
+    "feat/contract-lifecycle-validation-929",
+    "feat/env-Add-accessibility-attributes",
+    "origin",
+    "test/client-create-raffle-steps"
+  ]
+}
